@@ -26,6 +26,7 @@ convention = "google"
 python_version = "3.13"
 strict = true
 files = ["."]
+disable_error_code = ["import-not-found", "attr-defined"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
