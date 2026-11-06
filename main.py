@@ -74,9 +74,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Игра Змейка")
     parser.add_argument("--width", type=int, default=20, help="Ширина поля")
     parser.add_argument("--height", type=int, default=15, help="Высота поля")
-    parser.add_argument(
-        "--speed", type=int, default=8, help="Скорость"
-    )
+    parser.add_argument("--speed", type=int, default=8, help="Скорость")
     args = parser.parse_args()
 
     if args.width < 5 or args.width > 40 or args.height < 5 or args.height > 40:
